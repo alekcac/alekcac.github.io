@@ -18,23 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: RemoteFace
-email: your-email@example.com
+title: MetaPerson Editor
+email: support@avatarsdk.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Bringing Realism to the Metaverse: The Avatar SDK's AI-Driven 3D Avatar Creation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
+twitter_username: avatarsdk
 #github_username:  jekyll
 
 # Build settings
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 #remote_theme: rundocs/jekyll-rtd-theme@bb0b83f69bd5144ea38a39f005c4cac3b4242cc5
-logo: assets/img/logo.png
+logo: assets/logo.png
 #theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 
