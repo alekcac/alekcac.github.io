@@ -40,9 +40,9 @@ Here's a breakdown of the parameters:
 * **format** - This parameter specifies the format of the exported file. In this example, the format is set to "gltf". However, MetaPerson Editor also supports other formats such as "gltf", "glb", and "fbx".
 * **lod** - This parameter specifies the level of detail (LOD) for the exported file. The higher the LOD, the more detailed the exported file will be. In this example, the LOD is set to 1. However, MetaPerson Editor also supports a LOD of 2.
 * **textureProfile** - This parameter specifies the texture profile for the exported file. This determines the quality of the textures used in the exported file. In this example, the texture profile is set to "1K.jpg", which indicates that the textures will be 1K resolution and in the JPEG format. You can also use other texture profiles such as:
-  * "4K.png", "2K.png", "1K.png"
-  * "4K.jpg", "2K.jpg", "1K.jpg"
-  * "4K.webp", "2K.webp", "1K.webp"
+  * "2K.png", "1K.png"
+  * "2K.jpg", "1K.jpg"
+  * "2K.webp", "1K.webp"
 
 After setting these parameters, you can use the `postMessage()` method to send the Export Parameters call to MetaPerson Editor. This ensures that your exported avatar meets your specific needs and requirements.
 
