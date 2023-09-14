@@ -19,7 +19,7 @@ The body settings feature allows you to adjust your avatar's body shape to make 
 
 MetaPerson Creator is perfect for anyone who wants to create a unique 3D avatar for gaming, social media, or just for fun. It's easy to use and doesn't require any special skills or knowledge. So what are you waiting for? Try [MetaPerson Creator](https://metaperson.avatarsdk.com) today and bring your avatar to life!
 
-Currently, MetaPerson Creator includes two independent implementations. The first one MetaPerson Creator Desktop is based on Unity WebGL, and the second one MetaPerson Creator Mobile uses React.js and three.js for better support for mobile devices. If you open the MetaPerson Creator link [MetaPerson Creator](https://metaperson.avatarsdk.com) from your mobile device it will redirect you to https://mobile.metaperson.avatarsdk.com. You can use the latest link independently for your projects. The UI here is better suited for different scales, but the features set can be different between these versions. 
+Currently, MetaPerson Creator includes two independent implementations. The first one *MetaPerson Creator Desktop* is based on Unity WebGL, and the second one *MetaPerson Creator Mobile* uses React.js and three.js for better support for mobile devices. If you open the MetaPerson Creator link [MetaPerson Creator](https://metaperson.avatarsdk.com) from your mobile device it will redirect you to [https://mobile.metaperson.avatarsdk.com](https://mobile.metaperson.avatarsdk.com). You can use the latest link independently for your projects. The UI here is better suited for different scales, but the features set can be different between these versions. 
 
 ![](assets/img/mobile_creator.png)
 

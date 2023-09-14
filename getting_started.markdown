@@ -16,7 +16,7 @@ To start using MetaPerson Creator, simply create an account on [our website](htt
 
 Before you can authorize MetaPerson Creator to integrate it into your website or application, you need to generate developer credentials in your profile. This is a simple process that can be done by visiting the developer credentials page on [our website](https://accounts.avatarsdk.com/developer/#web-api).
 
-Once you're on the developer page, you'll need to create a new application to get your "App Client ID" and "App Client Secret" values. These values are required for integrating MetaPerson Creator into your website or application. For this purpose, you need to enter any name to the "Application name" field and press the "SUBMIT" button.
+Once you're on the developer page, you'll need to create a new application to get your "App Client ID" and "App Client Secret" values. These values are required for integrating MetaPerson Creator into your website or application. For this purpose, you need to enter any name in the "Application name" field and press the "SUBMIT" button.
 
 ![](assets/img/application.png)
 
