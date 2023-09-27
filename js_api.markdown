@@ -30,7 +30,8 @@ The call is for setting the export parameters. This allows you to customize the 
         "eventName": "set_export_parameters",
         "format" : "gltf",
         "lod" : 1,
-        "textureProfile" : "1K.jpg"
+        "textureProfile" : "1K.jpg",
+        "useZip" : true
     };
     evt.source.postMessage(exportParametersMessage, "*");
 ```
@@ -46,6 +47,7 @@ Here's a breakdown of the parameters:
   * "4K.png", "2K.png", "1K.png"
   * "4K.jpg", "2K.jpg", "1K.jpg"
   * "4K.webp", "2K.webp", "1K.webp"
+* **useZip** - By default after export Creator returns a public link to the Zip file with model and textures. In the case of formats supported by the embedded textures (glb and fbx), we can return a link only to the model file without using the archive, for this purpose this parameter should be set up to false. 
 
 After setting these parameters, you can use the `postMessage()` method to send the Export Parameters call to MetaPerson Creator. This ensures that your exported avatar meets your specific needs and requirements.
 
@@ -103,12 +105,14 @@ Here's a breakdown of the parameters:
 
 * **eventName** - This is the name of the event, which in this case is "set_ui_parameters". This tells MetaPerson Creator which request you're making.
 * **isExportButtonVisible** - This parameter specifies should the UI include the export button or not.
+* **exportButtonText** - It allows to change the text of the export button. 
 * **closeExportDialogWhenExportComlpeted** - This parameter specifies closing the modal window with the export link right after export completion. 
 
 ```
 let uiParametersMessage = {
        "eventName": "set_ui_parameters",
        "isExportButtonVisible" : true,
+       "exportButtonText": "Go",
        "closeExportDialogWhenExportComlpeted" : false,
 };
 evt.source.postMessage(uiParametersMessage, "*");
