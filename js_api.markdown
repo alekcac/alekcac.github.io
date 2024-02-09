@@ -7,9 +7,10 @@ parent: Business integration
 
 # [](#header-1)JS API
 
-Communication between in iframe with MetaPerson Creator and your page is performed via a messaging mechanism. Messages with special events are both posted to and received from the MetaPerson Creator.
+Communication between an iframe with MetaPerson Creator and your page is performed via a messaging mechanism. Messages with special events are both posted to and received from the MetaPerson Creator.
+The events should be sent after the load of the corresponding version of MetaPerson Creator. In the Desktop version, we use the "unity_loaded" event to signal about it, in the Mobile version the "mobile_loaded" is used. Please check the corresponding business.html sample described [here](web_integration).
 
-## [](#header-3)Configuration events
+## [](#header-4)Configuration events
 
 Messages with these events can be sent only once right after the MetaPerson Creator was loaded.
 
@@ -19,7 +20,7 @@ Messages with these events can be sent only once right after the MetaPerson Crea
 
 * **UI Parameters** - This event allows you to configure some parts of the UI of MetaPerson Creator. E.g. hide some buttons or rename text for them etc. 
 
-## [](#header-3)Action events
+## [](#header-4)Action events
 
 These events tell the MetaPerson Creator to perform some specific actions.
 
@@ -29,14 +30,12 @@ These events tell the MetaPerson Creator to perform some specific actions.
 
 * **Show Avatar** - This event allows you to open an already created avatar and customize it.
 
-## [](#header-3)Events from MetaPerson Creator
+## [](#header-4)Events from MetaPerson Creator
 
 * **Model Exported** - The MetaPerson Creator sends this message when an avatar is exported. This event allows you to get the link to the resulting avatar. This link can then be used to download or integrate the avatar into your website or application.
 
 * **Action Availability** - The MetaPerson Creator sends this message to tell whether the "Export Avatar" and the "Generate Avatar" actions are available at the current moment.
 
-
-These events or functions should be called after the load of the corresponding version of MetaPerson Creator. In the Desktop version, we use the "unity_loaded" event to signal about it, in the Mobile version the "mobile_loaded" is used. Please check the corresponding business.html sample described [here](web_integration).
 
 ## [](#header-2)Export Parameters
 
@@ -181,7 +180,7 @@ The parameters of this code are:
 
 ## [](#header-2)Model Exported
 
-You can use the `model_exported` event to receive the link to the exported avatar once the user has completed the export process. Also, this event returns the avatar's code and gender. The "avatar code" can't be used to reopen the avatar for further modifications.
+You can use the `model_exported` event to receive the link to the exported avatar once the user has completed the export process. Also, this event returns the avatar's code and gender. The "avatar code" can be used to reopen the avatar for further modifications.
 
 ![](assets/img/export.png)
 
