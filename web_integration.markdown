@@ -23,7 +23,6 @@ function onUnityLoaded(evt, data) {
         "eventName": "authenticate",
         "clientId": CLIENT_ID,
         "clientSecret": CLIENT_SECRET,
-        "exportTemplateCode" : "",
     };
     evt.source.postMessage(authenticationMessage, "*");
 }
@@ -53,7 +52,6 @@ function onMobileLoaded(evt, data) {
         "eventName": "authenticate",
         "clientId": CLIENT_ID,
         "clientSecret": CLIENT_SECRET,
-        "exportTemplateCode" : "",
     };
     evt.source.postMessage(authenticationMessage, "*");
 }
